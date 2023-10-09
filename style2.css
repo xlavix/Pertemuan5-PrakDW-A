@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial;
+    height: 100%;
+}
+
+/* Gaya Dasar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+    margin: 0px;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 0px;
+  }
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+}
+/* Gaya Header */
+header {
+    background-color: #707070;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.icon {
+    float: left;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+/* Gaya Navigasi */
+.navbar {
+    padding: 10px 0;
+    margin: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: aqua; /* Ubah warna saat dihover */
+}
+
+/* Gaya Konten */
+.content {
+    background-color: #fff;
+    float: left;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.content h2 {
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.image-content {
+    width: 100%;
+    height: auto;
+}
+.container {
+    margin: 10px;
+}
+
+/* Gaya Footer */
+footer {
+    display: flex;
+    background-color: #707070;
+    color: #ffffff;
+    padding: 20px 0;
+    justify-content: space-evenly;
+}
+
+/* Hak Cipta */
+.copyright {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.navigation {
+    display: flex;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navigation li:hover{
+    color: aqua;
+}
+
+.kolom-section ul{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .navigation {
+    display: flex;
+    margin-top: 0px;
+}
